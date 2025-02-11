@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Return YouTube Dislike",
+  "version": "1.0",
+  "description": "Enhance your Facebook Story reactions",
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "tabs"
+  ],
+  "icons": {
+    "128": "icons/icon.png"
+  },
+  "host_permissions": [
+    "*://*.youtube.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*"
+      ],
+      "js": [
+        "scripts/inject.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "scripts/returnDislike.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  }
+}

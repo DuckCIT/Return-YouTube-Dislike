@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Return YouTube Dislike</title>
+    <style>
+        .popup-container {
+            padding: 5px 10px 10px 10px;
+            user-select: none;
+            width: 300px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .title-popup {
+            font-size: 14px;
+            display: flex;
+            font-weight: bold;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .sub-title-popup {
+            font-size: 12px;
+            color: #585858;
+            margin-bottom: 10px;
+        }
+        .close-btn {
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .extension-info {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background: #f9f9f9;
+            cursor: pointer;
+        }
+        .extension-info img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .extension-details {
+            text-align: left;
+        }
+        .more-extensions {
+            margin-top: 10px;
+        }
+        .more-extensions a {
+            display: block;
+            text-decoration: none;
+            color: #007bff;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="popup-container" id="popup">
+        <div class="title-popup">
+            <span>Return YouTube Dislike</span>
+            <span class="close-btn" id="closePopup">&times;</span>
+        </div>
+        <hr>
+        <p>© Copyright by DuckCIT - returnyoutubedislikeapi.com</p>
+        <div class="more-extensions">
+            <span class="sub-title-popup">More Extensions</span>
+            <div class="extension-info" data-url='https://github.com/DuckCIT/AllReacts-for-Facebook-Stories'>
+                <img src="https://github.com/DuckCIT/AllReacts-for-Facebook-Stories/blob/main/icons/icon128.png?raw=true" alt="AllReacts Icon">
+                <div class="extension-details">
+                    <strong>AllReacts for Facebook Stories</strong><br>
+                    <small>Enhance your Facebook Story reactions.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
