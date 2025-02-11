@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Return YouTube Dislike",
-  "version": "1.0",
-  "description": "Enhance your Facebook Story reactions",
+  "version": "1.0.0",
+  "description": "Return YouTube Dislike is a browser extension that restores the dislike count on YouTube videos, providing users with better insights into video ratings.",
   "permissions": [
     "scripting",
     "activeTab",
